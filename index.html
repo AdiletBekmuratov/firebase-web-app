@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Shop</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Overlay, must be placed direct after the opening body tag. -->
+    <div class="bs-canvas-overlay bs-canvas-anim bg-dark position-fixed w-100 h-100"></div>
+
+    <!-- Non-pushable content. -->
+    <nav class="navbar navbar-expand-md bg-faded justify-content-center sticky-top">
+        <a href="index.html" class="navbar-brand d-flex mr-auto">
+            <img src="images/big-shopping-store.svg" alt="" class="logo">
+            <div class="ml-3 logo-text">Mega Shop</div>
+        </a>
+
+        <div class="bs-offset-main bs-canvas-anim">
+            <button class="btn btn-toggler" type="button" data-toggle="canvas" data-target="#bs-canvas-right"
+                aria-expanded="false" aria-controls="bs-canvas-right"><i class="fas fa-bars"></i></button>
+        </div>
+
+        <div class="collapse navbar-collapse link-hide">
+            <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="support.html">Support</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">About Us</a>
+                </li>
+                <li class="nav-item my-auto">
+                    <i class="fas fa-circle-notch text-white"></i>
+                </li>
+                <li class="nav-item auth">
+                    <a class="nav-link access" href="signup.html">Sign up</a>
+                </li>
+                <li class="nav-item auth">
+                    <a class="nav-link access" href="login.html">Log in</a>
+                </li>
+                <li class="nav-item signed">
+                    <a class="nav-link" href="profile.html"><i class="far fa-user"></i></a>
+                </li>
+                <li class="nav-item signed">
+                    <a class="nav-link signOut" href="#"><i class="fas fa-sign-out-alt"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Right side menu -->
+    <div id="bs-canvas-right" class="bs-canvas bs-canvas-anim bs-canvas-right position-fixed h-100">
+
+        <button type="button" class="bs-canvas-close float-right close" aria-label="Close"><span aria-hidden="true"
+                class="text-light">&times;</span></button>
+
+        <div class="bs-canvas-content px-5 py-4 mt-3">
+            <div><a href="shop.html" class="bs-link">Shop</a></div>
+            <div><a href="support.html" class="bs-link ">Support</a></div>
+            <div><a href="index.html" class="bs-link">About Us</a></div>
+
+            <div class="hl mt-4 mb-4"></div>
+
+            <div class="auth"><a href="signup.html" class="bs-link access">Sign up</a></div>
+            <div class="auth"><a href="login.html" class="bs-link access">Log in</a></div>
+
+            <div class="signed"><a class="text-white" href="profile.html"><i class="far fa-user"></i> Profile</a></div>
+            <div class="signed mt-2"><a class="text-white signOut" href="#"><i class="fas fa-sign-out-alt"></i> Sign Out</a></div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container-fluid carousel__sec">
+            <div id="carouselExampleControls" class="carousel slide w-100" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block" src="images/car1.jpg" alt="First slide">
+                        <div class="carousel-content">
+                            <h1>Fashion Show</h1>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block" src="images/car2.jpg" alt="Second slide">
+                        <div class="carousel-content">
+                            <h1>New Arrival</h1>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block" src="images/car3.jpg" alt="Third slide">
+                        <div class="carousel-content">
+                            <h1>New Arrival</h1>
+                            <p>Modern Boots for being in mood</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5">
+                        <img class="img-fluid rounded-circle" src="images/01.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <h2 class="display-4">For those about to rock...</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam
+                            sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione
+                            voluptatum molestiae adipisci, beatae obcaecati.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="p-5">
+                        <img class="img-fluid rounded-circle" src="images/02.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="p-5">
+                        <h2 class="display-4">We salute you!</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam
+                            sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione
+                            voluptatum molestiae adipisci, beatae obcaecati.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5">
+                        <img class="img-fluid rounded-circle" src="images/03.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <h2 class="display-4">Let there be rock!</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam
+                            sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione
+                            voluptatum molestiae adipisci, beatae obcaecati.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer mt-auto">
+        <div class="row d-flex">
+            <div class="col-md-6 col-lg-2 mb-md-0 text-left">
+                <a href="index.html" class="d-flex mt-4 text-decoration-none">
+                    <img src="images/big-shopping-store.svg" alt="" height="30px">
+                    <div class="ml-3 logo-text">Mega Shop</div>
+                </a>
+            </div>
+
+            <div class="col-md-2 col-lg-2 mb-md-0 text-left">
+                <h6 class="mt-4">Company</h6>
+
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Jobs</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-6 col-lg-2 mb-md-0 text-left">
+                <h6 class="mt-4">COMMUNITIES</h6>
+
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="#">Developers</a>
+                    </li>
+                    <li>
+                        <a href="#">Advertising</a>
+                    </li>
+                    <li>
+                        <a href="#">Investors</a>
+                    </li>
+                    <li>
+                        <a href="#">Vendors</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-6 col-lg-2 mb-md-0 text-left">
+                <h6 class="mt-4">USEFUL LINKS</h6>
+
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="#">Support</a>
+                    </li>
+                    <li>
+                        <a href="#">Free Mobile App</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-md-0">
+                <div class="social-link-wrapper w-100">
+                    <h6 class="mt-4">Our Social Links</h6>
+                    <div class="mt-2 d-inline-block">
+                        <a href="#" class="social-link mr-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link mr-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 copyright-text">
+            <div class="d-flex">
+                <a href="#">Legal</a>
+                <a href="#">Privacy center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookies</a>
+                <a href="#">About Ads</a>
+                <a href="#">Additional CA Privacy Disclosures</a>
+
+                <p class="ml-auto">© 2021 Mega Shop</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
+
+    <script src="js/firebase_config.js"></script>
+
+    <script src="js/navbar.js"></script>
+</body>
+
+</html>
